@@ -1,0 +1,43 @@
+    /* CONTENT */
+
+    .content{
+        margin-left: 300px;
+        display: inline-block;
+    }
+
+    h2{
+        font-family:Tahoma,san-serif;
+        margin:20px 0px 20px 0px;
+        text-align: center;
+        color: red;
+    }
+
+    p::first-letter{
+        font-size: 30px;
+    }
+
+    p{
+        font-family:Tahoma,san-serif;
+        text-align: justify;
+        width: 800px;
+    }
+
+    section.intro{
+        background-color: rgba(13, 12, 12, 0.745);
+        font-family:Tahoma,san-serif;
+        padding: 40px;
+        border-radius: 20px;
+        margin-top: 50px;
+        margin-left: 30px;
+        color: rgb(226, 226, 222);
+        line-height: 1.7;
+        font-family: "Tahoma",sans-serif;
+    }
+
+    section{
+        margin-bottom: 100px;
+    }
+
+    section.intro article h2 i{
+        font-size: 30px;
+    }

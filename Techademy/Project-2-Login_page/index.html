@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script src="https://kit.fontawesome.com/9bb6241c8c.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html{
+            font-size: 10px;
+        }
+
+        body{
+            background-image: linear-gradient(to right top, #350dbe, #350dbe, #00207e, #00207e,#070707,#070707, #070707, #070707, #070707, #000000, #070707, #b41010, #c51414, #b91717, #e60c0c);
+            height: 100vh;
+        }
+
+        section{
+            background-color:rgba(14, 13, 13, 0.308);
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            width:38rem;
+            border:2px solid white;
+            border-radius: 1.2rem;
+            box-shadow: 2px 4px rgb(10, 10, 10);
+            z-index: 2;
+        }
+
+        .login{
+            padding: 3rem;
+        }
+
+
+        .login h2{
+            font-size :3rem;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            padding:2rem;
+            color:red;
+            border-bottom: 0.1rem solid rgb(237, 234, 234);
+        }
+
+        .input{
+            display:block;
+            border:none;
+            color:white;
+            background-color: transparent;
+            border-radius: 0.8rem;
+            border-bottom: 0.16rem ridge rgb(202, 192, 192);
+            font-size: 1.6rem;
+            outline: none;
+            width: 100%;
+            padding:1rem;
+            margin:2rem auto;
+        }
+
+        .input::placeholder{
+            color:white;
+        }
+
+        .input:hover{
+            border-color: rgb(7, 230, 18);
+        }
+
+        .login form{
+            margin-top:3rem;
+        }
+
+        .login form a{
+            text-decoration: none;
+            font-size: 1.4rem;
+            display:inline-block;
+            font-family: 'Poppins', sans-serif;
+            margin: 2rem 0rem 2rem 1rem;
+            font-weight: 700;
+            color: red;
+        }
+
+        .login form input[type="submit"]{
+            border:none;
+            padding: 1rem;
+            display:block;
+            width: 80%;
+            margin:auto;
+            border-radius: 2rem;
+            background-color: rgb(81, 81, 208);
+            color:white;
+            cursor: pointer;
+            border:1px solid rgb(81, 81, 208);
+        }
+
+        .login form input[type="submit"]:hover{
+            background-color: green;
+            border-color: green;
+        }
+
+        .login p{
+            font-size: 1.4rem;
+            font-family:"Poppins",sans-serif;
+            text-align: center;
+            margin-top: 2.5rem;
+            color:white;
+        }
+
+        .login p a{
+            text-decoration: none;
+            font-weight: 700;
+            color:red;
+        }
+
+        .fa-meteor{
+            background-color: transparent;
+            font-size: 1.5rem;
+            color:red;
+            box-shadow: 0.1rem 0rem 0.5rem 0.4rem red;
+            border-radius: 50%;
+            opacity:0.8;
+        }
+
+
+        #c1{
+            position: absolute;
+            top:3%;
+            left: 55%;
+            animation-name: commet1;
+            animation-iteration-count: infinite;
+            animation-duration: 120s;
+        }
+
+        /* #c2{
+            position: absolute;
+            top:14%;
+            left: 62%;
+            animation-name: commet2;
+            animation-iteration-count: infinite;
+            animation-duration: 65s;
+        } */
+
+        #c3{
+            position: absolute;
+            top:27%;
+            left: 74%;
+            animation-name: commet3;
+            animation-iteration-count: infinite;
+            animation-duration: 90s;
+        }
+
+        #c4{
+            position: absolute;
+            top:38%;
+            left: 85%;
+            animation-name: commet4;
+            animation-iteration-count: infinite;
+            animation-duration: 115s;
+        }
+
+        /* #c5{
+            position: absolute;
+            top:50%;
+            left: 98%;
+            animation-name: commet5;
+            animation-iteration-count: infinite;
+            animation-duration: 100s;
+        } */
+
+        @keyframes commet1{
+            0%{}
+            100% {left: 0%; top: 65%;}
+        }
+
+        /* @keyframes commet2{
+            0%{}
+            100% {left: 0%; top: 95%;}
+        } */
+
+        @keyframes commet3{
+            0%{}
+            100% {left:15%; top: 96%;}
+        }
+
+        @keyframes commet4{
+            0%{}
+            100% {left:30%; top: 96%;}
+        }
+
+        /* @keyframes commet5{
+            0%{}
+            100% {left:45%; top: 96%;}
+        } */
+
+        .fa-rocket{
+            color:rgb(29, 170, 247);
+            font-size: 3rem;
+            transform: rotate(79deg);
+            position: absolute;
+            top:0%;
+            left:0%;
+            border-radius: 50%;
+            box-shadow: -1px 2px 12px 3px red;
+            animation-name: roc;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            z-index: 1;
+        }
+
+        @keyframes roc{
+            0%{}
+            100%{top:95%;left:97%;}
+        }
+
+
+
+
+        #s1{
+            font-size: 3rem;
+            color:gold;
+            position:absolute;
+            top:50%;
+            left:0%;
+            visibility: hidden;
+            animation-delay: 2s;
+            animation-name: sat1;
+            animation-iteration-count: infinite;
+            animation-duration: 30s;
+        }
+
+        #s2{
+            font-size: 3rem;
+            /* background-image: linear-gradient(222deg,orange 50%,green 50%); */
+            color:gold;
+            border-radius: 50%;
+            position:absolute;
+            top:50%;
+            left:0%;
+            visibility: hidden;
+            animation-delay: 6s;
+            animation-name: sat2;
+            animation-iteration-count: infinite;
+            animation-duration: 30s;
+        }
+
+        @keyframes sat1{
+            100% {visibility:visible;left:45%; top: 95%;}
+        } 
+
+        @keyframes sat2{
+            100% {visibility:visible;left:45%; top: 95%;}
+        } 
+
+
+        .stars{
+            color: white;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        #st1{
+            text-shadow:0px 0px 0px white;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+            animation-name: star1;
+        }
+        #st2{
+            text-shadow:0px 0px 0px white;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+            animation-name: star2;
+        }
+        #st3{
+            text-shadow:0px 0px 0px white;
+            animation-iteration-count: infinite;
+            animation-duration: 4s;
+            animation-name: star3;
+        }
+        #st4{
+            text-shadow:0px 0px 0px white;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+            animation-name: star4;
+        }
+        #st5{
+            text-shadow:0px 0px 0px white;
+            animation-iteration-count: infinite;
+            animation-duration: 3s;
+            animation-name: star5;
+        }
+        #st6{
+            text-shadow:0px 0px 0px white;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+            animation-name: star6;
+        }
+        #st7{
+            text-shadow:0px 0px 0px white;
+            animation-iteration-count: infinite;
+            animation-duration: 2s;
+            animation-name: star7;
+        }
+        #st8{
+            text-shadow:0px 0px 0px white;
+            animation-iteration-count: infinite;
+            animation-duration: 4s;
+            animation-name: star8;
+        }
+
+        @keyframes star1{
+            50% {text-shadow: 0px 0px 30px white;}
+            0%{text-shadow: 0px 0px 0px white;}
+        }
+
+        @keyframes star2{
+            50% { text-shadow: 0px 0px 30px white;}
+            0%{text-shadow: 0px 0px 0px white;}
+        }
+        @keyframes star3{
+            50% { text-shadow: 0px 0px 30px white;}
+            0%{text-shadow: 0px 0px 0px white;}
+        }
+        @keyframes star4{
+            50% { text-shadow: 0px 0px 30px white;}
+            0%{text-shadow: 0px 0px 0px white;}
+        }
+        @keyframes star5{
+            50% { text-shadow: 0px 0px 30px white;}
+            0%{text-shadow: 0px 0px 0px white;}
+        }
+        @keyframes star6{
+            50% { text-shadow: 0px 0px 30px white;}
+            0%{text-shadow: 0px 0px 0px white;}
+        }
+        @keyframes star7{
+            50% { text-shadow: 0px 0px 30px white;}
+            0%{text-shadow: 0px 0px 0px white;}
+        }
+        @keyframes star8{
+            50% { text-shadow: 0px 0px 30px white;}
+            0%{text-shadow: 0px 0px 0px white;}
+        }
+
+
+        #st1{
+            position: absolute;
+            top: 9%;
+            left: 9%;
+        }
+
+        #st2{
+            position: absolute;
+            top: 15%;
+            left: 30%;
+        }
+
+        #st3{
+            position: absolute;
+            top: 40%;
+            left: 8%;
+        }
+
+        #st4{
+            position: absolute;
+            top: 50%;
+            left: 30%;
+        }
+
+        #st5{
+            position: absolute;
+            top: 60%;
+            left: 95%;
+        }
+
+        #st6{
+            position: absolute;
+            top: 80%;
+            left: 68%;
+        }
+
+
+        #st7{
+            position: absolute;
+            top: 50%;
+            left: 70%;
+        }
+
+
+        #st8{
+            position: absolute;
+            top: 80%;
+            left: 90%;
+        }
+
+
+        .fa-moon{
+            color: white;
+            font-size: 10rem;
+            position: absolute;
+            left:5%;
+            top:5%;
+            border-radius: 30%;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <i id="c1" class="fa-solid fa-meteor"></i>
+    <!-- <i id="c2" class="fa-solid fa-meteor"></i> -->
+    <i id="c3" class="fa-solid fa-meteor"></i>
+    <i id="c4" class="fa-solid fa-meteor"></i>
+    <!-- <i id="c5" class="fa-solid fa-meteor"></i> -->
+    <i class="fa-solid fa-rocket"></i>
+    <i id="s1" class="fa-solid fa-satellite"></i>
+    <i id="s2"class="fa-solid fa-satellite"></i>
+    <p id="st1" class="stars">&#8902;</p>
+    <p id="st1" class="stars">&#8902;</p>
+    <p id="st1" class="stars">&#8902;</p>
+
+    <p id="st2" class="stars">&#8902;</p>
+    <p id="st2" class="stars">&#8902;</p>
+    <p id="st2" class="stars">&#8902;</p>
+
+    <p id="st3" class="stars">&#8902;</p>
+    <p id="st3" class="stars">&#8902;</p>
+    <p id="st3" class="stars">&#8902;</p>
+
+    <p id="st4" class="stars">&#8902;</p>
+    <p id="st4" class="stars">&#8902;</p>
+    <p id="st4" class="stars">&#8902;</p>
+
+    <p id="st5" class="stars">&#8902;</p>
+    <p id="st5" class="stars">&#8902;</p>
+    <p id="st5" class="stars">&#8902;</p>
+
+    <p id="st6" class="stars">&#8902;</p>
+    <p id="st6" class="stars">&#8902;</p>
+    <p id="st6" class="stars">&#8902;</p>
+
+    <p id="st7" class="stars">&#8902;</p>
+    <p id="st7" class="stars">&#8902;</p>
+    <p id="st7" class="stars">&#8902;</p>
+
+    <p id="st8" class="stars">&#8902;</p>
+    <p id="st8" class="stars">&#8902;</p>
+    <p id="st8" class="stars">&#8902;</p>
+    <i class="fa-solid fa-moon"></i>
+
+    <section>
+        <div class="login">
+            <h2>LOGIN</h2>
+            <form action="">
+                <input class="input" type="text" placeholder="Username" required>
+                <input class="input" type="password" placeholder="Password" required>
+                <a href="">Forgot password?</a>
+                <input type="submit" value="Login">
+            </form>
+            <p>Not a member?<a href=""> Signup</a></p>
+        </div>
+    </section>
+
+    
+</body>
+</html>

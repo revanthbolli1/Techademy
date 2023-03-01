@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile card</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        html{
+            font-size: 10px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: #2978B5;
+        }
+        
+        section{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background-color: #24203B;
+            color:#AAA7BE;
+            width: 33rem;
+            transform: translate(-50%, -50%);
+            border-radius: 1.2rem;
+            animation: infinite;
+            animation-duration: 3s;
+            animation-name: example;
+        }
+
+        @keyframes example{
+            from {box-shadow: 1px 3px 40px 1px rgb(168, 39, 39);}
+            10%{box-shadow: 1px 3px 40px 2px rgb(245, 6, 6);}
+            20%{box-shadow: 1px 3px 40px 4px rgb(245, 6, 6);}
+            30%{box-shadow: 1px 3px 40px 6px rgb(245, 6, 6);}
+            40%{box-shadow: 1px 3px 40px 8px rgb(245, 6, 6);}
+            30%{box-shadow: 1px 3px 40px 6px rgb(245, 6, 6);}
+            20%{box-shadow: 1px 3px 40px 4px rgb(245, 6, 6);}
+            10%{box-shadow: 1px 3px 40px 2px rgb(245, 6, 6);}
+            to {box-shadow: 1px 3px 40px 0px rgb(202, 44, 44);}
+        }
+
+
+        section .person{
+            padding-top:3rem;
+            
+        }
+
+        section .person img{
+            display:block;
+            width:10rem;
+            height:10.5rem;
+            margin:auto;
+            border: 3px solid aqua;
+            border-radius: 50%;
+        }
+
+        section .person p:first-child{
+            font-size: 1.4rem;
+            background-color: gold;
+            display: inline;
+            color: black;
+            padding: 0.1rem 0.8rem;
+            position:absolute;
+            top:1.5rem;
+            left:2rem;
+        }
+
+        section .person h2.name{
+            margin-top: 1rem;
+            text-align: center;
+        }
+
+        section .person p.country{
+            margin-top: 0.5rem;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        section .person p.stack{
+            margin-top: 2rem;
+            text-align: center;
+            font-size: 1.6rem;
+        }
+
+        section .person .buttons{
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        section .person .icons{
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        section .person .buttons .message{
+            background-color: #00ACD1;
+            border: 1px solid #00ACD1;
+            padding: 0.7rem 1.3rem;
+            border-radius: 0.3rem;
+            margin-right: 0.4rem;
+            cursor: pointer;
+        }
+
+        section .person .buttons .following{
+            background-color: transparent;
+            border: 1px solid #00ACD1;
+            color:#00ACD1;
+            padding: 0.7rem 1.3rem;
+            border-radius: 0.3rem;
+            margin-left: 0.4rem;
+            cursor: pointer;
+        }
+
+        .skills{
+            background-color:#1F1B3B;
+            padding: 2rem 1rem;
+            border-radius: 1.2rem;
+        }
+
+
+        .skills ul{
+            margin-top: 1rem;
+        }
+
+        .skills ul li{
+            background-color: transparent;
+            font-size: 1.4rem;
+            list-style: none;
+            display: inline;
+            border: 0.2rem solid#2e294a;
+            padding: 0.2rem 0.6rem;
+            line-height: 3rem;
+            margin-right: 0.2rem;
+        }
+
+        .fa-linkedin, .fa-instagram,.fa-facebook{
+            font-size: 2rem;
+            margin-right: 1rem;
+        }
+
+        a{
+            color: inherit;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="person">
+            <p>PRO</p>
+            <img src="./images/profile.jpg" alt="Picture">
+            <h2 class="name">Revanth Bolli</h2>
+            <p class="country">INDIA</p>
+            <p class="stack">Full Stack Developer</p>
+            <div class="buttons">
+                <button class="message">Message</button>
+                <button class="following">Following</button>
+            </div>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/revanth-bolli-9072991a2/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/r_e_v_a_n_t_h___b_o_l_l_i/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100008866572460"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+
+        <div class="skills">
+            <h2>SKILLS</h2>
+            <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>ReactJS</li>
+                <li>C++</li>
+                <button type=""></button>
+            </ul>
+        </div>
+    </section>
+    <script src="https://kit.fontawesome.com/9bb6241c8c.js" crossorigin="anonymous"></script>
+</body>
+</html>

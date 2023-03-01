@@ -1,0 +1,92 @@
+h1{
+  color:rgb(255, 255, 255);
+}
+
+label{
+  color:rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+#contact{
+    background-color:hwb(100 0% 99%);
+    padding: 30px 0;
+  }
+  
+  .colc2{
+  align-items: center;
+  }
+  
+  .colc1{
+    text-align: center;
+  }
+  
+  .colc1 h1{
+    text-align: center;
+    color:#eaefeb;
+  }
+  
+  .colc1 img{
+    border-radius: 60%;
+  }
+  .colc1 p{
+    text-align: center;
+    line-height: 60px;
+    color:#e5e3e5;
+    font-weight: bold;
+    font-size: 23px;
+    color: rgb(245, 11, 11);
+  }
+  
+  .colc2 form{
+    width: 100%;
+    }
+  
+  .coc2 h1{
+    text-align: center;
+  }
+  
+  form input, form textarea{
+    width:100%;
+    outline:none;
+    border:0;
+    background: #262626;
+    margin: 15px 0;
+    padding: 15px;
+    font-size: 18px;
+    color:#e5e3e5;
+  }
+  
+  
+  .btn.btn2{
+    display: inline-block;
+    background: #ef0909;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    color:white;
+    padding: 15px 15px;
+  }
+  
+  .btn:hover{
+    background-color: rgba(10, 225, 31, 0.605);
+    color: white;
+    cursor: pointer;
+  }
+  
+  
+  .social img{
+    border-radius: 60%;
+  }
+
+p{
+  padding-left: 350px;
+}
+
+#icons{
+  font-size: 30px;
+  color:rgb(240, 232, 232);
+}
+
+a{
+  text-decoration: none;
+}

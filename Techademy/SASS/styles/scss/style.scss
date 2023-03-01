@@ -1,0 +1,86 @@
+$textSize:10px;
+span{
+    font-size: $textSize;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@mixin generate-items-row($margin, $items_count){
+    width:((100% - ($margin * $items_count))/ $items_count);
+    margin-right: $margin;
+    margin-bottom: $margin;
+    border: 1px solid black;
+    float:left;
+}
+
+
+
+.section-1{
+    div{
+        box-sizing: border-box;
+        background-color: yellow;
+        @include generate-items-row(2%, 5);
+        img{
+            width:100%;
+        }
+
+        @media (min-width:721px) and (max-width:1279px){
+            @include generate-items-row(2%, 5);
+            span{
+                font-size: $textSize + 10px;
+            }
+        }
+
+        @media (min-width:481px) and (max-width:720px){
+            @include generate-items-row(2%, 4);
+            span{
+                font-size: $textSize + 8px;
+            }
+        }
+
+        @media (max-width:480px){
+            @include generate-items-row(2%, 2);
+            span{
+                font-size: $textSize + 6px;
+            }
+        }
+
+
+    }
+}
+
+
+.section-2{
+    div{
+        box-sizing: border-box;
+        background-color: red;
+        @include generate-items-row(2%, 3);
+        img{
+            width:100%;
+        }
+        @media (min-width:721px) and (max-width:1279px){
+            @include generate-items-row(2%, 3);
+            span{
+                font-size: $textSize + 10px;
+            }
+        }
+
+        @media (min-width:481px) and (max-width:720px){
+            @include generate-items-row(2%, 2);
+            span{
+                font-size: $textSize + 8px;
+            }
+        }
+
+        @media (max-width:480px){
+            @include generate-items-row(2%, 1);
+            span{
+                font-size: $textSize + 6px;
+            }
+        }
+    }
+}

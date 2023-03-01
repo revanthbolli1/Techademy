@@ -1,0 +1,76 @@
+/* SIDE NAVIGATION */
+.sidenav a{
+    margin-bottom: 10px;
+    width:160px;
+    display:block;
+    padding: 20px;
+    font-size: 19px;
+    font-weight: 700;
+    color: rgb(212, 212, 218);
+    text-decoration: none;
+}
+
+
+.sidenav a:hover{
+    background-color: rgb(238, 234, 234);
+    color:rgb(12, 11, 11);
+    border:2px solid black;
+    border-radius: 8px;
+    width: 210px;
+}
+
+.sidenav{
+    position:fixed;
+    left:-160px;
+    transition-timing-function: linear;
+    transition: 0.4s;
+    background-color: rgba(9, 8, 8, 0.718);
+    height: 572px;
+    width:160px;
+    color:white;
+    border-style:groove;
+    /* margin-top:30px; */
+    border-top: none;
+    /* border-bottom: none; */
+    /* border-left: none; */
+    padding-left: 5px;
+    padding-top:20px;
+    padding-right: 35px;
+    padding-bottom: 60px;
+}
+
+.sidenav:hover{
+    position: fixed;
+    left: 0px;
+    width: 18%;
+    cursor: pointer;
+}
+
+
+.sidenav a i{
+    display:inline;
+}
+
+.arrow{
+    position: absolute;
+    right:10px;
+    top:300px;
+    color:rgb(235, 232, 232);
+    animation:infinite;
+    animation-name: example1;
+    animation-duration: 5s;
+    border-style: double;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+}
+
+.arrow:hover{
+    animation-name: example1r;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes example1r{
+    100%{rotate: 180deg;}
+}

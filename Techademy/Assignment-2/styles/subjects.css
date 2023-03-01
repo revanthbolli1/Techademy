@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body{
+    margin: 0;
+    padding:0;
+    background-color: rgb(9, 24, 49);
+    background-image: url("../images/bgsubjects.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size: 10px;
+}
+
+#subjects{
+    background-color: black;
+    color:red;
+}
+
+
+.container{
+    background-color:rgb(91, 14, 142);
+    width:80rem;
+    height: 70rem;
+    margin:5rem auto;
+    opacity: 0.8;
+    border-radius: 2rem;
+    border:2px solid rgb(240, 238, 238);
+}
+
+.container h1{
+    font-size: 3rem;
+    text-align: center;
+    color:rgb(14, 1, 1);
+}
+
+.container .sem1,.container .sem2,.container .sem3,.container .sem4,.container .sem5,.container .sem6,.container .sem7,.container .sem8{
+    border: 0.1rem solid rgb(245, 236, 236);
+    margin:10rem auto 0rem auto;
+    background-color: rgb(11, 106, 189);
+    border-radius: 0.8rem;
+}
+.container .sem1:hover,.container .sem2:hover,.container .sem3:hover,.container .sem4:hover,.container .sem5:hover,.container .sem6:hover,.container .sem7:hover,.container .sem8:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.container .sem{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container .sem p{
+    color: rgb(251, 251, 250);
+    font-size: 1.6rem;
+}
